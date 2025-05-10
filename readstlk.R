@@ -8,7 +8,7 @@ library(streamsandlakes)
 stlkdata <- streamsandlakes:::LoadStreamsAndLakes()
 
 # Set output folder for CSV exports
-dest.folder <- paste0("C:/Users/jbailard/Documents/R/export/stlk","/",format(Sys.time(), format="%Y-%m-%dT%H%M%S"))
+dest.folder <- paste0(here::here(),"/",format(Sys.time(), format="%Y-%m-%dT%H%M%S"))
 
 # Folder export/sls must already exist. Code below will only make the date-time subfolder
 if (file.exists(dest.folder)) {
