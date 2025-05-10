@@ -390,7 +390,8 @@ DPchecker::run_congruence_checks(check_metadata_only = TRUE)
 If your data package is now complete, you can run some tests prior to upload to make sure that the package meets a minimal set of requirements and that the data and metadata are properly specified and consistent with each other. This assumes that your data package is in the root of your R project. It will run all of the checks in the code chunk directly above, and then some!
 ```{r congruence_tests}
 # this assumes that the data package is the working directory
-DPchecker::run_congruence_checks()
+DPchecker::run_congruence_checks(directory = working_folder,
+                                 metadata = load_metadata(here::here()))
 
 # if your data package is somewhere else, specify that:
 # run_congruence_checks("C:/Users/<yourusername>/Documents/my_data_package")
