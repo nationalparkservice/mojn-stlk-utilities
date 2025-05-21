@@ -320,7 +320,7 @@ You will need the DOI for the DRR you are drafting as well as the DRR's title. G
 it will not be activated until after publication so that you have plenty of 
 time to construct the DRR.
 ```{r DRR_links}
-# my_metadata <- EMLeditor::set_drr(my_metadata, 7654321, "DRR Title")
+my_metadata <- EMLeditor::set_drr(my_metadata, 2312646, "Mojave Desert Network (MOJN) Streams and Lakes (STLK) Data Quality Report 2024")
 ```
 
 #### Set the language 
